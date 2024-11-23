@@ -1,0 +1,442 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
+
+  /* General Body Font Styling */
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: #1a1a1a; /* Dark background */
+    color: #e0e0e0; /* Soft gray text */
+    line-height: 1.6; /* Default line spacing for readability */
+  }
+  
+  /* Navigation */
+  nav {
+    width: 100%;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333333; /* Subtle mid-gray for navigation background */
+    border-bottom: 2px solid #444444; /* Slightly lighter border for separation */
+  }
+  
+  nav .logo {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #0077ff; /* Neon blue for standout logo */
+  }
+  
+  nav .nav-links {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  nav .nav-links a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    color: #e0e0e0; /* Light gray links */
+    transition: color 0.3s ease;
+  }
+  
+  nav .nav-links a:hover {
+    color: #0077ff; /* Neon blue hover effect */
+  }
+  
+  /* Hero Section */
+  .hero {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: url('hero-image.jpg') center/cover no-repeat; /* Background image */
+  }
+  
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for text visibility */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .hero-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 3rem;
+    color: #e0e0e0; /* Vibrant neon blue */
+    margin-bottom: 1rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.2rem;
+    color: #e0e0e0; /* Soft gray for subtitle */
+    margin-bottom: 2rem;
+  }
+  
+  .hero-button {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #1a1a1a; /* Dark text for contrast on button */
+    background-color: #0077ff; /* Neon blue button */
+    padding: 0.8rem 2rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .hero-button:hover {
+    background-color: #444444; /* Dark hover for contrast */
+    color: #e0e0e0;
+    transform: scale(1.05); /* Slight scaling effect */
+  }
+  
+
+  /* General Body Font Styling */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #1a1a1a; /* Dark background */
+    color: #e0e0e0; /* Soft gray text */
+    line-height: 1.6; /* Default line spacing for readability */
+  }
+  
+/* Main Section Styling */
+.artist-grid {
+    display: flex; /* Flex layout for alignment */
+    flex-direction: row; /* Left-to-right flow */
+    align-items: flex-start; /* Align items at the top */
+    gap: 2rem; /* Spacing between image and text */
+    padding: 2rem; /* Add padding around the section */
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto; /* Center the grid container */
+  }
+  
+  /* Left Side: Profile Picture and Info */
+  .artist-left {
+    display: flex;
+    flex-direction: column; /* Stack image and text vertically */
+    text-align: left; /* Align text to the left */
+    gap: 1.5rem; /* Space between elements */
+  }
+  
+  /* Profile Picture */
+  .artist-pic-container {
+    max-width: 200px; /* Limit profile picture size */
+    margin-bottom: 1rem; /* Add spacing below the image */
+  }
+  
+  .artist-pic {
+    width: 100%;
+    border-radius: 12px; /* Rounded corners */
+    border: 4px solid #444444; /* Subtle border for emphasis */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+  }
+  
+  /* Text Content */
+  .artist-info {
+    text-align: left; /* Ensure all text aligns left */
+  }
+  
+  .artist-name {
+    font-family: 'Space Grotesk', sans-serif; /* Bold font for standout title */
+    font-size: 2.5rem; /* Large size for emphasis */
+    font-weight: 700;
+    color: #0077ff; /* Neon blue for the title */
+    margin-bottom: 0.5rem;
+  }
+  
+  .artist-bio {
+    font-family: 'Inter', sans-serif; /* Clean and modern font */
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.8; /* Add spacing between lines for readability */
+    color: #e0e0e0; /* Soft gray for body text */
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Call-to-Action Button */
+  .video-link {
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    background-color: #0077ff; /* Neon blue for button */
+    padding: 0.8rem 2rem;
+    border-radius: 8px; /* Rounded edges for modern look */
+    text-transform: uppercase;
+    letter-spacing: 0.8px; /* Slight spacing for readability */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .video-link:hover {
+    background-color: #444444; /* Dark hover color for button */
+    color: #e0e0e0; /* Light text on hover */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .artist-grid {
+      flex-direction: column; /* Stack image and text vertically */
+      gap: 1.5rem; /* Reduce spacing for smaller screens */
+    }
+  
+    .artist-pic-container {
+      margin-bottom: 1rem; /* Ensure proper spacing below image */
+    }
+  
+    .artist-name {
+      font-size: 2rem; /* Adjust font size for smaller screens */
+    }
+  
+    .artist-bio {
+      font-size: 1rem; /* Adjust body text size */
+    }
+  
+    .video-link {
+      font-size: 0.9rem; /* Adjust button text size */
+      padding: 0.6rem 1.5rem; /* Adjust padding for smaller screens */
+    }
+  }
+  
+  
+  /* Spotify Embed */
+  .spotify-embed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 600px; /* Constrain Spotify width */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  }
+  
+  .spotify-embed iframe {
+    width: 100%;
+    height: 380px; /* Standard Spotify height */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .artist-grid {
+      grid-template-columns: 1fr; /* Stack columns for mobile */
+      text-align: center; /* Center all text for small screens */
+    }
+  
+    .spotify-embed iframe {
+      height: 300px; /* Adjust Spotify height for mobile */
+    }
+  }
+
+  /* Tour Dates Section */
+.tour-dates {
+    padding: 4rem 2rem;
+    background-color: #1a1a1a; /* Dark background */
+    color: #e0e0e0; /* Soft gray text */
+    text-align: center;
+  }
+  
+  .tour-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #0077ff; /* Neon blue for the title */
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+  }
+  
+  /* Calendar Grid */
+  .calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 7 columns for days of the week */
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Calendar Headers */
+  .calendar-header {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: #0077ff;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0.5rem;
+  }
+  
+  /* Calendar Cells */
+  .calendar-cell {
+    background-color: #2b2b2b; /* Slightly lighter background for cells */
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: transform 0.2s ease, background-color 0.3s ease;
+  }
+  
+  .calendar-cell:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    background-color: #333333; /* Slightly lighter on hover */
+  }
+  
+  /* Tour Days */
+  .tour-day {
+    background-color: #0077ff; /* Neon blue for tour days */
+    color: #1a1a1a; /* Dark text for contrast */
+  }
+  
+  .tour-day .event {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #ffffff; /* White text for event name */
+    margin-top: 0.5rem;
+  }
+  
+  /* Empty Cells */
+  .calendar-cell.empty {
+    background: none;
+    box-shadow: none;
+  }
+  
+  /* Dates */
+  .date {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #e0e0e0; /* Light gray for dates */
+  }
+  
+  .date.tour-day {
+    color: #ffffff; /* White for tour day dates */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .calendar {
+      grid-template-columns: repeat(3, 1fr); /* Stack days in 3 columns */
+    }
+  
+    .tour-title {
+      font-size: 2rem; /* Adjust font size for smaller screens */
+    }
+  }
+  
+  
+  
+/* Footer Section */
+.footer {
+    background-color: #1a1a1a; /* Dark background */
+    color: #e0e0e0; /* Soft gray text */
+    padding: 4rem 2rem;
+    font-family: 'Inter', sans-serif;
+    text-align: left; /* Ensure all text aligns left */
+  }
+  
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns for desktop */
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-logo h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #0077ff;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-logo p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-links h3,
+  .footer-social h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #0077ff; /* Neon blue for section headers */
+    margin-bottom: 1rem;
+  }
+  
+  .footer-links ul,
+  .footer-social ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li,
+  .footer-social li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-links a,
+  .footer-social a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #e0e0e0;
+    transition: color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .footer-links a:hover,
+  .footer-social a:hover {
+    color: #0077ff; /* Neon blue hover */
+    transform: translateX(5px); /* Subtle slide-in hover effect */
+  }
+  
+  .footer-copyright {
+    grid-column: span 3; /* Full-width on desktop */
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #666666; /* Subtle gray text */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer-container {
+      grid-template-columns: 1fr; /* Single column for mobile */
+      text-align: left; /* Align text left-to-right */
+      gap: 1.5rem;
+    }
+  
+    .footer-logo {
+      text-align: center; /* Center logo for visual balance */
+    }
+  
+    .footer-logo h2 {
+      text-align: center; /* Center-align logo text */
+    }
+  
+    .footer-logo p {
+      text-align: left; /* Left-align tagline for symmetry */
+    }
+  
+    .footer-links,
+    .footer-social {
+      text-align: left; /* Align links and platforms to the left */
+    }
+  
+    .footer-copyright {
+      text-align: center; /* Center copyright text */
+      font-size: 0.8rem; /* Adjust font size for mobile */
+      margin-top: 1.5rem;
+    }
+  }
+  
